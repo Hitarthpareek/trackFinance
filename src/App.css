@@ -1,3 +1,12 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  width: 100vw;
+  height: 90vh;
+  margin-top: 50px;
+}
+
 .charts-wrapper {
   display: flex;
   gap: 2rem;
