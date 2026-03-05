@@ -28,7 +28,7 @@ const ChartsComponent = ({ sortedTransactions }) => {
 
   const config = {
     data: data,
-    width: 800,
+    //width: 800,
     autoFit: false,
     xField: "date",
     yField: "amount",
@@ -45,25 +45,25 @@ const ChartsComponent = ({ sortedTransactions }) => {
 
   const spendingConfig = {
     data: Object.values(finalSpendings),
-    width: 800,
+    //width: 800,
     angleField: "amount",
     colorField: "tag",
   };
 
   return (
-    <div>
-      <div className="charts-wrapper">
-        <div>
-          <h2 style={{ marginTop: 0 }}>Your Analytics</h2>
-          <Line {...config} />
-        </div>
+    
+<div className="charts-wrapper">
+  <div className="chart-container">
+    <h2 style={{ marginTop: 0 }}>Your Analytics</h2>
+    <Line {...config} />
+  </div>
 
-        <div>
-          <h2>Your Spending</h2>
-          <Pie {...spendingConfig} />
-        </div>
-      </div>
-    </div>
+  <div className="chart-container">
+    <h2>Your Spending</h2>
+    <Pie {...spendingConfig} />
+  </div>
+</div>
+    
   );
 };
 

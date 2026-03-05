@@ -1,17 +1,12 @@
-.wrapper,
 .charts-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 90vh;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+  flex-wrap: wrap; /* makes responsive */
 }
 
-.charts-wrapper {
-  justify-content: space-between;
-  height: auto;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: var(--shadow);
-  margin: 2rem;
+.chart-container {
+  flex: 1;
+  min-width: 320px;
 }
