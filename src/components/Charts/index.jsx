@@ -29,7 +29,6 @@ const ChartsComponent = ({ sortedTransactions }) => {
   const config = {
     data: data,
     width: 800,
-    height: 400,
     autoFit: false,
     xField: "date",
     yField: "amount",
@@ -47,7 +46,6 @@ const ChartsComponent = ({ sortedTransactions }) => {
   const spendingConfig = {
     data: Object.values(finalSpendings),
     width: 800,
-    height: 400,
     angleField: "amount",
     colorField: "tag",
   };
